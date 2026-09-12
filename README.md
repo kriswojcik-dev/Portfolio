@@ -3,10 +3,10 @@
 This is my personal portfolio website, built to showcase my web development projects, technical skills, and professional experience.
 
 ## 🔗 Live Site
-[View Portfolio](https://kriswojcik-dev.github.io/KWojcikPortfolio/)
+[View Portfolio](https://kriswojcik-dev.github.io/Portfolio/)
 
 ## 📂 Repository
-[GitHub Repository](https://github.com/kriswojcik-dev/KWojcikPortfolio)
+[GitHub Repository](https://github.com/kriswojcik-dev/Portfolio)
 
 ---
 
