@@ -8,6 +8,21 @@ Teal: #04BFBF
 Mint: #04D9B2
 */
 
+:root {
+    --color-pink-primary: #F23568;
+    --color-pink-light: #F2C2CF;
+    --color-pink-mid: #F285AD;
+    --color-pink-dark: #A61E4D;
+    --color-teal: #04BFBF;
+    --color-mint: #04D9B2;
+    --color-card: #FFE4EC;
+    --color-ink: #222;
+    --color-white: #FFF;
+    --color-teal-rgb: 4, 191, 191;
+    --color-pink-primary-rgb: 242, 53, 104;
+    --color-black-rgb: 0, 0, 0;
+}
+
 /* GLOBAL */
 * {
     box-sizing: border-box;
@@ -16,14 +31,14 @@ Mint: #04D9B2
 body {
     margin: 0;
     font-family: "Space Grotesk", Arial, Helvetica, sans-serif;
-    background: linear-gradient(135deg, #F2C2CF, #F285AD);
-    color: #222;
+    background: linear-gradient(135deg, var(--color-pink-light), var(--color-pink-mid));
+    color: var(--color-ink);
     font-size: 16px;
 }
 
 header {
-    background-color: #F23568;
-    color: white;
+    background-color: var(--color-pink-primary);
+    color: var(--color-white);
     text-align: center;
     padding: 2rem 1rem;
 }
@@ -73,14 +88,14 @@ main section {
 
 .contact-card:hover {
     transform: translateY(-4px);
-    box-shadow: 6px 6px 0 #04BFBF;
+    box-shadow: 6px 6px 0 var(--color-teal);
 }
 
 .contact-card::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(4, 191, 191, 0.08), rgba(242, 53, 104, 0.08));
+    background: linear-gradient(135deg, rgba(var(--color-teal-rgb), 0.08), rgba(var(--color-pink-primary-rgb), 0.08));
     pointer-events: none;
 }
 
@@ -92,11 +107,11 @@ main section {
     height: 52px;
     margin: 0 auto 0.75rem;
     border-radius: 50%;
-    background-color: #F23568;
-    color: white;
+    background-color: var(--color-pink-primary);
+    color: var(--color-white);
     font-weight: 700;
     font-size: 1.4rem;
-    box-shadow: 0 4px 0 #A61E4D;
+    box-shadow: 0 4px 0 var(--color-pink-dark);
 }
 
 .contact-grid section p {
@@ -131,8 +146,8 @@ main section {
 }
 
 footer {
-    background-color: #04BFBF;
-    color: #222;
+    background-color: var(--color-teal);
+    color: var(--color-ink);
     text-align: center;
     padding: 1rem;
 }
@@ -149,10 +164,10 @@ html {
 
 h1 {
     font-family: "Libre Barcode 128 Text", cursive;
-    color: #04BFBF;
+    color: var(--color-teal);
     font-size: 3rem;
     letter-spacing: 4px;
-    text-shadow: 2px 2px 0 #222;
+    text-shadow: 2px 2px 0 var(--color-ink);
 }
 
 h2 {
@@ -169,9 +184,9 @@ p {
 
 /* NAV*/
 nav {
-    background-color: #F285AD;
+    background-color: var(--color-pink-mid);
     padding: 1rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(var(--color-black-rgb), 0.1);
 }
 
 nav ul {
@@ -186,38 +201,38 @@ nav ul {
 nav a {
     display: block;
     text-decoration: none;
-    background-color: #04BFBF;
-    color: #222;
+    background-color: var(--color-teal);
+    color: var(--color-ink);
     padding: 0.75rem;
     text-align: center;
     border-radius: 8px;
     font-weight: bold;
     transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.2s;
-    box-shadow: 0 4px 0 #04D9B2;
+    box-shadow: 0 4px 0 var(--color-mint);
 }
 
 nav a:hover {
-    background-color: #04D9B2;
-    color: white;
+    background-color: var(--color-mint);
+    color: var(--color-white);
     transform: translateY(-2px);
 }
 
 nav a:active {
-    background-color: #F23568;
-    color: white;
+    background-color: var(--color-pink-primary);
+    color: var(--color-white);
     transform: translateY(2px);
-    box-shadow: 0 2px 0 #A61E4D;
+    box-shadow: 0 2px 0 var(--color-pink-dark);
 }
 
 nav a.active {
-    background-color: #F23568;
-    color: white;
-    box-shadow: 0 4px 0 #A61E4D;
+    background-color: var(--color-pink-primary);
+    color: var(--color-white);
+    box-shadow: 0 4px 0 var(--color-pink-dark);
 }
 
 nav a.active:hover {
-    background-color: #F23568;
-    color: white;
+    background-color: var(--color-pink-primary);
+    color: var(--color-white);
     transform: none;
 }
 
@@ -255,18 +270,18 @@ nav a,
 
 .home-buttons a {
     text-decoration: none;
-    background-color: #04BFBF;
-    color: #222;
+    background-color: var(--color-teal);
+    color: var(--color-ink);
     padding: 0.75rem;
     border-radius: 8px;
     font-weight: bold;
-    box-shadow: 0 4px 0 #04D9B2;
+    box-shadow: 0 4px 0 var(--color-mint);
     transition: 0.2s;
 }
 
 .home-buttons a:hover {
-    background-color: #04D9B2;
-    color: white;
+    background-color: var(--color-mint);
+    color: var(--color-white);
     transform: translateY(-2px);
 }
 
@@ -275,7 +290,7 @@ nav a,
     display: block;
     width: 60px;
     height: 4px;
-    background-color: #04BFBF;
+    background-color: var(--color-teal);
     margin: 1rem auto 0;
     border-radius: 2px;
 }
@@ -285,8 +300,8 @@ nav a,
     height: 220px;
     object-fit: cover;
     border-radius: 50%;
-    border: 4px solid #04BFBF;
-    box-shadow: 5px 5px 0 #F23568;
+    border: 4px solid var(--color-teal);
+    box-shadow: 5px 5px 0 var(--color-pink-primary);
     display: block;
     margin: 0 auto 1rem;
 }
@@ -305,44 +320,44 @@ nav a,
 .filter-btn {
     border: 0;
     border-radius: 8px;
-    background-color: #04BFBF;
-    color: #222;
+    background-color: var(--color-teal);
+    color: var(--color-ink);
     padding: 0.75rem 1rem;
     font-family: "Space Grotesk", sans-serif;
     font-size: 1rem;
     font-weight: 600;
-    box-shadow: 0 4px 0 #04D9B2;
+    box-shadow: 0 4px 0 var(--color-mint);
     transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.2s;
     cursor: pointer;
 }
 
 .filter-btn:hover {
-    background-color: #04D9B2;
-    color: white;
+    background-color: var(--color-mint);
+    color: var(--color-white);
     transform: translateY(-2px);
 }
 
 .filter-btn:active {
-    background-color: #F23568;
-    color: white;
+    background-color: var(--color-pink-primary);
+    color: var(--color-white);
     transform: translateY(2px);
-    box-shadow: 0 2px 0 #A61E4D;
+    box-shadow: 0 2px 0 var(--color-pink-dark);
 }
 
 .filter-btn.active {
-    background-color: #F23568;
-    color: white;
-    box-shadow: 0 4px 0 #A61E4D;
+    background-color: var(--color-pink-primary);
+    color: var(--color-white);
+    box-shadow: 0 4px 0 var(--color-pink-dark);
 }
 
 .filter-btn.active:hover {
-    background-color: #F23568;
-    color: white;
+    background-color: var(--color-pink-primary);
+    color: var(--color-white);
     transform: none;
 }
 
 .filter-btn:focus-visible {
-    outline: 3px solid #222;
+    outline: 3px solid var(--color-ink);
     outline-offset: 3px;
 }
 
@@ -362,11 +377,11 @@ nav a,
 
 .project-card {
     flex: 1 1 320px;
-    background-color: #FFE4EC;
-    border: 3px solid #F23568;
+    background-color: var(--color-card);
+    border: 3px solid var(--color-pink-primary);
     border-radius: 12px;
     padding: 1rem;
-    box-shadow: 4px 4px 0 #04BFBF;
+    box-shadow: 4px 4px 0 var(--color-teal);
     transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.2s;
     display: flex;
     flex-direction: column;
@@ -386,7 +401,7 @@ nav a,
     width: 100%;
     height: 200px;
     object-fit: contain;
-    background-color: #F2C2CF;
+    background-color: var(--color-pink-light);
     border-radius: 8px;
 }
 
@@ -403,50 +418,190 @@ nav a,
 .project-links a {
     flex: 1;
     text-decoration: none;
-    background-color: #04D9B2;
-    color: #222;
+    background-color: var(--color-mint);
+    color: var(--color-ink);
     padding: 0.5rem;
     text-align: center;
     border-radius: 6px;
     font-weight: bold;
-    box-shadow: 0 3px 0 #04BFBF;
+    box-shadow: 0 3px 0 var(--color-teal);
     transition: 0.2s;
     cursor: pointer;
 }
 
 .project-links a:hover {
-    background-color: #04BFBF;
-    color: white;
+    background-color: var(--color-teal);
+    color: var(--color-white);
     transform: translateY(-2px);
 }
 
 .project-links a:active {
     transform: translateY(2px);
-    box-shadow: 0 1px 0 #04BFBF;
+    box-shadow: 0 1px 0 var(--color-teal);
 }
 
 /* GENERAL CONTENT CARDS */
 main section:not(.project-card) {
-    background-color: #FFE4EC;
-    border: 2px solid #F23568;
+    background-color: var(--color-card);
+    border: 2px solid var(--color-pink-primary);
     border-radius: 12px;
     padding: 1rem;
     max-width: 700px;
     margin: 1rem auto;
     margin-bottom: 1rem;
-    box-shadow: 4px 4px 0 #04BFBF;
+    box-shadow: 4px 4px 0 var(--color-teal);
     transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.2s;
 }
 
 main section:not(.project-card):hover {
     transform: translateY(-3px);
-    box-shadow: 6px 6px 0 #04BFBF;
+    box-shadow: 6px 6px 0 var(--color-teal);
+}
+
+.about-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-5px) scale(1.01);
+    box-shadow: 7px 9px 0 var(--color-teal);
 }
 
 h2 {
-    color: #F23568;
-    border-bottom: 3px solid #04BFBF;
+    color: var(--color-pink-primary);
+    border-bottom: 3px solid var(--color-teal);
     padding-bottom: 0.25rem;
+}
+
+
+
+/* ===================================
+   HOMEPAGE FEATURED PROJECTS
+=================================== */
+
+.featured-work {
+    width: 100%;
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 1.5rem;
+    box-sizing: border-box;
+}
+
+.featured-intro {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.featured-intro h2 {
+    font-size: 2rem;
+    color: var(--color-ink);
+    margin-bottom: 0.5rem;
+}
+
+.featured-intro p {
+    max-width: 650px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.featured-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    overflow: hidden;
+    background-color: var(--color-card);
+    border: 2px solid var(--color-pink-primary);
+    border-radius: 12px;
+    box-shadow: 5px 5px 0 var(--color-teal);
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.featured-card:hover {
+    transform: translateY(-5px) scale(1.01);
+    box-shadow: 7px 9px 0 var(--color-teal);
+}
+
+.featured-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    background-color: var(--color-pink-light);
+}
+
+.featured-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 1.25rem;
+    text-align: left;
+}
+
+.featured-category {
+    color: var(--color-pink-dark);
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.featured-content h3 {
+    margin: 0.75rem 0;
+    font-size: 1.3rem;
+}
+
+.featured-content p {
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+.featured-content a,
+.view-all-btn {
+    display: inline-block;
+    padding: 0.75rem 1rem;
+    background-color: var(--color-teal);
+    color: var(--color-ink);
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+    transition: background-color 0.2s ease;
+}
+
+.featured-content a:hover,
+.view-all-btn:hover {
+    background-color: var(--color-mint);
+}
+
+.featured-content a:focus-visible,
+.view-all-btn:focus-visible {
+    outline: 3px solid var(--color-pink-primary);
+    outline-offset: 3px;
+}
+
+.featured-footer {
+    margin-top: 2.5rem;
+    text-align: center;
+}
+
+/* TABLET */
+@media screen and (min-width: 650px) {
+    .featured-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1000px) {
+    .featured-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
 }
 
 /* MEDIA QUERY: larger screens */
@@ -531,5 +686,5 @@ h2 {
     height: auto;
     border: none;
     border-radius: 8px;
-    background-color: #222;
+    background-color: var(--color-ink);
 }
