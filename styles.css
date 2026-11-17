@@ -292,6 +292,60 @@ nav a,
 }
 
 /* PROJECT PAGE */
+.portfolio-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    max-width: 1200px;
+    margin: 0 auto 1.5rem;
+    padding: 0 1rem;
+}
+
+.filter-btn {
+    border: 0;
+    border-radius: 8px;
+    background-color: #04BFBF;
+    color: #222;
+    padding: 0.75rem 1rem;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    box-shadow: 0 4px 0 #04D9B2;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.2s;
+    cursor: pointer;
+}
+
+.filter-btn:hover {
+    background-color: #04D9B2;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.filter-btn:active {
+    background-color: #F23568;
+    color: white;
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 #A61E4D;
+}
+
+.filter-btn.active {
+    background-color: #F23568;
+    color: white;
+    box-shadow: 0 4px 0 #A61E4D;
+}
+
+.filter-btn.active:hover {
+    background-color: #F23568;
+    color: white;
+    transform: none;
+}
+
+.filter-btn:focus-visible {
+    outline: 3px solid #222;
+    outline-offset: 3px;
+}
+
 .project-grid {
     display: flex;
     flex-wrap: wrap;
@@ -318,6 +372,10 @@ nav a,
     flex-direction: column;
     gap: 0.5rem;
     max-width: 350px;
+}
+
+.project-card[hidden] {
+    display: none;
 }
 
 .project-card:hover {
