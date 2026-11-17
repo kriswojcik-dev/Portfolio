@@ -463,3 +463,15 @@ h2 {
         min-width: 0;
     }
 }
+
+
+/* EMBEDDED PROJECT VIDEOS */
+.project-card iframe {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border: none;
+    border-radius: 8px;
+    background-color: #222;
+}
