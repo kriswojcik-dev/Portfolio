@@ -4,60 +4,345 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
-    <title>Projects</title>
+
+    <title>Projects | Kristin Wojcik</title>
 </head>
 
 <body>
+    <!-- HEADER -->
     <header>
         <h1>Projects</h1>
     </header>
+
+    <!-- NAVIGATION -->
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="projects.html" class="active">Projects</a></li>
+            <li>
+                <a href="projects.html" class="active" aria-current="page">Projects</a>
+            </li>
             <li><a href="resume.html">Resume</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    <main class="project-grid">
-        <section class="project-card">
-            <h2>Managing Anxiety Website</h2>
-            <img src="images/anxiety.png" alt="Managing Anxiety website screenshot">
-            <p>A responsive wellness website designed to help users manage anxiety through breathing exercises, calming
-                sounds, activity ideas, and supportive notes.</p>
-            <p><strong>Skills used:</strong> HTML, CSS, JavaScript, responsive design, accessibility</p>
-            <div class="project-links">
-                <a href="https://kriswojcik-dev.github.io/Managing-Anxiety/" target="_blank">View Project</a>
-                <a href="https://github.com/kriswojcik-dev/Managing-Anxiety" target="_blank">GitHub</a>
-            </div>
 
+    <!-- MAIN PORTFOLIO -->
+    <main class="portfolio">
+        <!-- INTRODUCTION -->
+        <section class="portfolio-intro">
+            <h2>My Creative Portfolio</h2>
+
+            <p>
+                Welcome to my collection of creative work! Here you'll find projects
+                showcasing my experience in web development, graphic design, editorial
+                design, and motion graphics.
+            </p>
         </section>
-        <section class="project-card">
-            <h2>Vogel Timepiece</h2>
-            <img src="images/VogelTimpiece.png" alt="Vogel Timepiece website screenshot">
-            <p>A mock storefront website for a fictional watchmaker, focused on layout design, branding, and navigation
-                structure.</p>
-            <p><strong>Skills used:</strong> HTML, CSS, layout design</p>
-            <div class="project-links">
-                <a href="https://drive.google.com/drive/folders/1y7AZnZ0hvp2A3AjqUP-rcoLFlKbs7Qmw?usp=sharing"
-                    target="_blank">View Mockup in Google Drive</a>
-                <a href="#">No Source Code Available</a>
-            </div>
-        </section>
-        <section class="project-card">
-            <h2>Coming Soon</h2>
-            <p>This section will feature an upcoming web development project.</p>
-        </section>
+
+        <!-- PROJECT FILTERS -->
+        <div class="portfolio-filters" role="group" aria-label="Project categories">
+            <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">
+                All Projects
+            </button>
+
+            <button type="button" class="filter-btn" data-filter="web" aria-pressed="false">
+                Web Development
+            </button>
+
+            <button type="button" class="filter-btn" data-filter="design" aria-pressed="false">
+                Graphic Design
+            </button>
+
+            <button type="button" class="filter-btn" data-filter="motion" aria-pressed="false">
+                Motion Graphics
+            </button>
+        </div>
+
+        <!-- PROJECT GRID -->
+        <div class="project-grid">
+            <!-- PROJECT 1: MANAGING ANXIETY -->
+            <section class="project-card" data-category="web">
+                <h2>Managing Anxiety Website</h2>
+
+                <img src="images/anxiety.png" alt="Managing Anxiety website screenshot" loading="lazy">
+
+                <span class="project-category">Web Development</span>
+
+                <p>
+                    A responsive wellness website designed to help users manage anxiety
+                    through breathing exercises, calming sounds, activity ideas, and
+                    supportive notes.
+                </p>
+
+                <p>
+                    <strong>Skills used:</strong>
+                    HTML, CSS, JavaScript, responsive design, accessibility
+                </p>
+
+                <div class="project-links">
+                    <a href="https://kriswojcik-dev.github.io/Managing-Anxiety/" target="_blank"
+                        rel="noopener noreferrer">
+                        View Project
+                    </a>
+
+                    <a href="https://github.com/kriswojcik-dev/Managing-Anxiety" target="_blank"
+                        rel="noopener noreferrer">
+                        GitHub
+                    </a>
+                </div>
+            </section>
+
+            <!-- PROJECT 2: VOGEL TIMEPIECE -->
+            <section class="project-card" data-category="design">
+                <h2>Vogel Timepiece</h2>
+
+                <img src="images/VogelTimpiece.png" alt="Vogel Timepiece storefront mockup" loading="lazy">
+
+                <span class="project-category">Graphic Design / UI Design</span>
+
+                <p>
+                    A mock storefront website for a fictional watchmaker, focused on
+                    layout design, branding, and navigation structure.
+                </p>
+
+                <p>
+                    <strong>Skills used:</strong>
+                    HTML, CSS, layout design
+                </p>
+
+                <div class="project-links">
+                    <a href="https://drive.google.com/drive/folders/1y7AZnZ0hvp2A3AjqUP-rcoLFlKbs7Qmw?usp=sharing"
+                        target="_blank" rel="noopener noreferrer">
+                        View Mockup
+                    </a>
+                </div>
+            </section>
+
+            <!-- PROJECT 3: WATERME -->
+            <section class="project-card" data-category="web">
+                <h2>WaterME</h2>
+
+                <img src="images/waterme.png" alt="WaterME interactive website screenshot" loading="lazy">
+
+                <span class="project-category">Web Development</span>
+
+                <p>
+                    An interactive water-themed website featuring user engagement,
+                    responsive layouts, and front-end development techniques.
+                </p>
+
+                <p>
+                    <strong>Skills used:</strong>
+                    HTML, CSS, JavaScript
+                </p>
+
+                <div class="project-links">
+                    <a href="https://kriswojcik-dev.github.io/WaterME/" target="_blank" rel="noopener noreferrer">
+                        View Project
+                    </a>
+
+                    <a href="https://github.com/kriswojcik-dev/WaterME" target="_blank" rel="noopener noreferrer">
+                        GitHub
+                    </a>
+                </div>
+            </section>
+
+            <!-- PROJECT 4: SPICY MISO PHOTOGRAPHY -->
+            <section class="project-card" data-category="web">
+                <h2>Spicy Miso Photography</h2>
+
+                <img src="images/spicymiso.png" alt="Spicy Miso Photography website screenshot" loading="lazy">
+
+                <span class="project-category">Web Development / Branding</span>
+
+                <p>
+                    A photography portfolio website designed to showcase visual
+                    storytelling, photography collections, and a cohesive creative
+                    identity.
+                </p>
+
+                <p>
+                    <strong>Skills used:</strong>
+                    HTML, CSS, responsive web design
+                </p>
+
+                <div class="project-links">
+                    <a href="https://kriswojcik-dev.github.io/SpicyMisoPhoto/" target="_blank"
+                        rel="noopener noreferrer">
+                        View Project
+                    </a>
+
+                    <a href="https://github.com/kriswojcik-dev/SpicyMisoPhoto" target="_blank"
+                        rel="noopener noreferrer">
+                        GitHub
+                    </a>
+                </div>
+            </section>
+
+            <!-- PROJECT 5: DESIGN MANIFESTO -->
+            <section class="project-card" data-category="design">
+                <h2>Play Is Not a Waste of Time</h2>
+
+                <img src="images/manifesto.png" alt="Play Is Not a Waste of Time manifesto booklet" loading="lazy">
+
+                <span class="project-category">Editorial / Graphic Design</span>
+
+                <p>
+                    An editorial manifesto booklet exploring the importance of play,
+                    creativity, and self-expression. The project focuses on typography,
+                    visual hierarchy, composition, and multi-page publication design.
+                </p>
+
+                <p>
+                    <strong>Skills used:</strong>
+                    Adobe InDesign, typography, editorial layout
+                </p>
+            </section>
+
+            <!-- PROJECT 6: POKEMON STINGER -->
+            <section class="project-card" data-category="motion">
+                <h2>Pokémon Stinger</h2>
+
+
+                <iframe src="https://www.youtube.com/embed/UdRH_CZZxs8" title="Pokémon Stinger" loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+
+
+                <span class="project-category">Motion Graphics</span>
+
+                <p>
+                    A Pokémon-themed animated stinger exploring motion, timing, and
+                    visual composition.
+                </p>
+
+                <div class="project-links">
+                    <a href="https://youtu.be/UdRH_CZZxs8" target="_blank" rel="noopener noreferrer">
+                        Watch Video
+                    </a>
+                </div>
+            </section>
+
+            <!-- PROJECT 7: ATLUS LOGO -->
+            <section class="project-card" data-category="motion">
+                <h2>ATLUS Logo Animation</h2>
+
+                <iframe src="https://www.youtube.com/embed/eN7VsX6oIts" title="ATLUS Logo Animation" loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+
+                <span class="project-category">Motion Graphics</span>
+
+                <p>
+                    A motion graphics project centered around animated logo presentation
+                    and visual transitions.
+                </p>
+
+                <div class="project-links">
+                    <a href="https://youtu.be/eN7VsX6oIts" target="_blank" rel="noopener noreferrer">
+                        Watch Video
+                    </a>
+                </div>
+            </section>
+
+            <!-- PROJECT 8: WELCOME TO PHILADELPHIA -->
+            <section class="project-card" data-category="motion">
+                <h2>Welcome to Philadelphia</h2>
+
+
+                <iframe src="https://www.youtube.com/embed/U3w2W7uW8vE" title="Welcome to Philadelphia" loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+
+
+                <span class="project-category">Motion Graphics</span>
+
+                <p>
+                    A Philadelphia-themed motion graphics project exploring animated
+                    visual storytelling and creative composition.
+                </p>
+
+                <div class="project-links">
+                    <a href="https://youtu.be/U3w2W7uW8vE" target="_blank" rel="noopener noreferrer">
+                        Watch Video
+                    </a>
+                </div>
+            </section>
+
+            <!-- PROJECT 9: STRAWBERRY MATCHA AD -->
+            <section class="project-card" data-category="motion">
+                <h2>Strawberry Matcha Advertisement</h2>
+
+
+                <iframe src="https://www.youtube.com/embed/cey_DWMFgK4" title="Strawberry Matcha Advertisement"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+
+
+                <span class="project-category">Motion Graphics / Advertising</span>
+
+                <p>
+                    A creative beverage advertisement focused on motion design, product
+                    presentation, and visual storytelling.
+                </p>
+
+                <div class="project-links">
+                    <a href="https://youtu.be/cey_DWMFgK4" target="_blank" rel="noopener noreferrer">
+                        Watch Video
+                    </a>
+                </div>
+            </section>
+        </div>
     </main>
+
+    <!-- FOOTER -->
     <footer>
         <p>Built by Kristin Wojcik. 2026</p>
     </footer>
+
+    <!-- PROJECT FILTER SCRIPT -->
+    <script>
+        const filterButtons = document.querySelectorAll(".filter-btn");
+        const projectCards = document.querySelectorAll(".project-card");
+
+        filterButtons.forEach((button) => {
+            button.addEventListener("click", () => {
+                const selectedCategory = button.dataset.filter;
+
+                filterButtons.forEach((btn) => {
+                    btn.classList.remove("active");
+                    btn.setAttribute("aria-pressed", "false");
+                });
+
+                button.classList.add("active");
+                button.setAttribute("aria-pressed", "true");
+
+                projectCards.forEach((card) => {
+                    const category = card.dataset.category;
+
+                    if (selectedCategory === "all" || category === selectedCategory) {
+                        card.hidden = false;
+                    } else {
+                        card.hidden = true;
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
