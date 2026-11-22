@@ -688,3 +688,44 @@ h2 {
     border-radius: 8px;
     background-color: var(--color-ink);
 }
+
+/* PROJECT 3 DEMO REEL */
+.demo-reel.project-card {
+    flex-basis: 100%;
+    min-width: 0;
+    max-width: 100%;
+    scroll-margin-top: 1rem;
+}
+
+.demo-reel.project-card:hover {
+    transform: none;
+}
+
+.demo-reel video {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border-radius: 8px;
+    background-color: var(--color-ink);
+}
+
+.demo-reel-overview {
+    align-self: flex-start;
+    margin: 0 0 0.5rem;
+}
+
+.demo-reel-pieces {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 225px), 1fr));
+    gap: 1rem;
+}
+
+.demo-reel-pieces article {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    border: 1px solid var(--color-pink-primary);
+    border-radius: 8px;
+}
