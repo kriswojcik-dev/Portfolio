@@ -679,7 +679,7 @@ h2 {
 
 
 /* EMBEDDED PROJECT VIDEOS */
-.project-card iframe {
+.project-card video {
     display: block;
     width: 100%;
     aspect-ratio: 16 / 9;
@@ -699,15 +699,6 @@ h2 {
 
 .demo-reel.project-card:hover {
     transform: none;
-}
-
-.demo-reel video {
-    display: block;
-    width: 100%;
-    height: auto;
-    aspect-ratio: 16 / 9;
-    border-radius: 8px;
-    background-color: var(--color-ink);
 }
 
 .demo-reel-overview {
