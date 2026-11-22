@@ -682,6 +682,9 @@ h2 {
 .project-card video {
     display: block;
     width: 100%;
+    max-width: 18rem;
+    min-width: 0;
+    align-self: center;
     aspect-ratio: 16 / 9;
     height: auto;
     border: none;
@@ -695,6 +698,10 @@ h2 {
     min-width: 0;
     max-width: 100%;
     scroll-margin-top: 1rem;
+}
+
+.demo-reel video {
+    max-width: 35rem;
 }
 
 .demo-reel.project-card:hover {
